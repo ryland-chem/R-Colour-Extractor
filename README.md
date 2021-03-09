@@ -1,1 +1,1 @@
-# R-Colour-Extractor
+# R Colour Extractor
