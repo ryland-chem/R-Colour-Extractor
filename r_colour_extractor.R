@@ -6,7 +6,16 @@ library(jpeg)
 library(reshape2)
 
 #upload a photo
-var_1 <- readJPEG("var_1.jpg")
+#var_1 <- readJPEG("var_1.jpg")
+
+#show all files in working directory, stored as a vector
+#WD must be same as file where code is stored
+#put code in same file as photos 
+#photos must be as .jpg
+files <- list.files(path = "./",
+                    pattern = "*jpg",
+                    full.names = TRUE,
+                    recursive = FALSE)
 
 #take the center 200 pixels of the image 
 center_col <- round(1/2*ncol(var_1))
